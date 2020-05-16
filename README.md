@@ -1,4 +1,8 @@
-# How to execute the code
+# Embryo development simulation with 3D model from zygote to late blastocyst
+A study of early mammalian embryo development using subcellular element method for spatial dynamics and gene network ODE models for gene expression dynamics.
+The two main aspects we focus on are 1) selective adhesion and 2) FGF signaling.
+
+## How to execute the code
 1: The code is executed using <code>C</code> with <code>OpenCL</code>.
 
 2: To execute the code, please copy the following into the commend line:
@@ -7,7 +11,7 @@ gcc -o exe main.c -lOpenCL -std=c99 -lm
 ./exe
 ```
 
-3: You need to choose the platform to execute the code in line 474 of <code>main.c</code>
+3: You need to choose the platform to execute the code in line 474 of <code>main.c</code>. In the same line, use <code>CL_DEVICE_TYPE_GPU</code> for GPU device or <code>CL_DEVICE_TYPE_CPU</code> for CPU device.
 (It is show as platform_id[0] in the code, if you have error when executing,
 you can try platform_id[1], platform_id[2], ...)
 
@@ -15,7 +19,7 @@ you can try platform_id[1], platform_id[2], ...)
 
 5: Once you executed the code, you will get space files (in "PQR" folder) and gene files (in "signal" folder).
 
-# How to use the space file
+## How to use the space file
 
 1: The name for the space file is <code>XXX_space.timestamp.pqr</code> in <code>PQR</code> folder where XXX is the file name you can modify in main file. The timestamp is the simulation time (16C: 39000, 32C: 75000, 64C: 95000, 128C beginning: 120000, 128C mid: 160000, end of simulation: 260000)
 
@@ -29,9 +33,9 @@ col 6, 7, 8: the x, y, z coordinate is 3D space
 
 col 9, 10: related to element type but not used in the code (needed when you use VMD to draw the embryo)
 
-3: You can use <code>VMD</code> to draw the embryo with the help of <code>drow_pqr.sh</code>. 
+3: You can use <code>VMD</code> to draw the embryo. First load the pqr file as new molecule into <code>VMD</code>, then execute the commands of <code>drow_pqr.sh</code> in Tk console. 
 
-# How to use the gene file
+## How to use the gene file
 
 1: The name for the gene file is <code>XXX_gene.timestamp.txt</code> in <code>signal</code> folder where XXX is the file name you can modify in main file. The timestamp is the simulation time (16C: 39000, 32C: 75000, 64C: 95000, 128C beginning: 120000, 128C mid: 160000, end of simulation: 260000)
 
