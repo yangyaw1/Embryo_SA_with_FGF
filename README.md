@@ -17,7 +17,7 @@ you can try platform_id[1], platform_id[2], ...)
 
 # How to use the space file
 
-1: The name for the space file is "XXX_space.timestamp.pqr" in "PQR" folder where XXX is the file name you can modify in main file. The timestamp is the simulation time (16C: 39000, 32C: 75000, 64C: 95000, 128C beginning: 120000, 128C mid: 160000, end of simulation: 260000)
+1: The name for the space file is <code>XXX_space.timestamp.pqr</code> in <code>PQR</code> folder where XXX is the file name you can modify in main file. The timestamp is the simulation time (16C: 39000, 32C: 75000, 64C: 95000, 128C beginning: 120000, 128C mid: 160000, end of simulation: 260000)
 
 2: The file contains several rows and columns. Each row is one element. The column shows cell and space information:  
 
@@ -33,7 +33,7 @@ col 9, 10: related to element type but not used in the code (needed when you use
 
 # How to use the gene file
 
-1: The name for the gene file is "XXX_gene.timestamp.pqr" in "signal" folder where XXX is the file name you can modify in main file. The timestamp is the simulation time (16C: 39000, 32C: 75000, 64C: 95000, 128C beginning: 120000, 128C mid: 160000, end of simulation: 260000)
+1: The name for the gene file is <code>XXX_gene.timestamp.txt</code> in <code>signal</code> folder where XXX is the file name you can modify in main file. The timestamp is the simulation time (16C: 39000, 32C: 75000, 64C: 95000, 128C beginning: 120000, 128C mid: 160000, end of simulation: 260000)
 
 2: The file contains several rows and columns. Each row is one cell. The column shows gene expression information:  
 
