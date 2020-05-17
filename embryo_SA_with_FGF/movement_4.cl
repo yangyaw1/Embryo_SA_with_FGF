@@ -320,7 +320,7 @@ __const int sa_on_time)
                       }
                       if( id1+id2 == 5 && id1 != id2)
                       {
-                          if(V>0) V=2.0f*V;
+                          if(V>0) V=1.0f*V;
                           if(V<0) V=1.0f*V;
                       }
                       if( id1+id2 == 2 && id1 != id2)

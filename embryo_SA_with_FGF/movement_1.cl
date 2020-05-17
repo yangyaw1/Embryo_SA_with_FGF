@@ -292,52 +292,52 @@ __const int sa_on_time)
                   if(id1 == 0 || id1 == 1 || id1 == 3 || id1 == 4) id1 = 0;
                   if(id2 == 0 || id2 == 1 || id2 == 3 || id2 == 4) id2 = 0;
                   }
-                  if(id1+id2 == 2 && id1 == id2)
-                  {
-                  if(V>0) V=0.25*V;
-                  if(V<0) V=4*V;
-                  }
-                  if(id1+id2 == 0)
-                  {
-                  if(V>0) V=0.25*V;
-                  if(V<0) V=4*V;
-                  }
-                  if(id1+id2 == 1)
-                  {
-                  if(V>0) V=0.25/1.197f*V;
-                  if(V<0) V=4*1.197f*V;
-                  }
-                  if(id1+id2 == 8)
-                  {
-                  if(V>0) V=0.25/0.294f*V;
-                  if(V<0) V=4*0.294f*V;
-                  }
-
-                  if( id1+id2 == 4 && id1 != id2)
-                  {
-                  if(V>0) V=0.25/0.527f*V;
-                  if(V<0) V=4*0.527f*V;
-                  } 
-                  if( id1+id2 == 5 && id1 != id2)
-                  {
-                  if(V>0) V=0.25/0.650f*V;
-                  if(V<0) V=4*0.650f*V;
-                  } 
-                  if( id1+id2 == 2 && id1 != id2)
-                  {
-                  if(V>0) V=1*V;
-                  if(V<0) V=3*V;
-                  }
-                  if(id1+id2 == 6)
-                  {
-                  if(V>0) V=6*V;
-                  if(V<0) V=0.1*V;
-                  }    
-                  if(id1+id2 == 4 && id1 == id2)  
-                  {
-                  if(V>0) V=1*V;
-                  if(V<0) V=1*V;
-                  }  
+                      if(id1+id2 == 2 && id1 == id2)
+                      {
+                          if(V>0) V=0.25*V;
+                          if(V<0) V=4*V;
+                      }
+                      if(id1+id2 == 0)
+                      {
+                          if(V>0) V=0.25*V;
+                          if(V<0) V=4*V;
+                      }
+                      if(id1+id2 == 1)
+                      {
+                          if(V>0) V=0.25*V;
+                          if(V<0) V=4*V;
+                      }
+                      if(id1+id2 == 8)
+                      {
+                          if(V>0) V=1.0f*V;
+                          if(V<0) V=0.75f*V;
+                      }
+                      
+                      if( id1+id2 == 4 && id1 != id2)
+                      {
+                          if(V>0) V=2.0f*V;
+                          if(V<0) V=1.0f*V;
+                      }
+                      if( id1+id2 == 5 && id1 != id2)
+                      {
+                          if(V>0) V=1.0f*V;
+                          if(V<0) V=1.0f*V;
+                      }
+                      if( id1+id2 == 2 && id1 != id2)
+                      {
+                          if(V>0) V=1*V;
+                          if(V<0) V=1*V;
+                      }
+                      if(id1+id2 == 6)
+                      {
+                          if(V>0) V=6*V;
+                          if(V<0) V=0.1*V;
+                      }
+                      if(id1+id2 == 4 && id1 == id2)
+                      {
+                          if(V>0) V=1*V;
+                          if(V<0) V=1*V;
+                      }
                   }
                   if(iter >= 50000 && iter<65000)
                   { 
