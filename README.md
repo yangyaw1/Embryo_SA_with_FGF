@@ -33,7 +33,7 @@ col 6, 7, 8: the x, y, z coordinate is 3D space
 
 col 9, 10: related to element type but not used in the code (needed when you use VMD to draw the embryo)
 
-3: You can use <code>VMD</code> to draw the embryo. First load the pqr file as new molecule into <code>VMD</code>, then execute the commands of <code>draw_pqr.sh</code> in Tk console. 
+3: You can use <code>VMD</code> to draw the embryo. First load the pqr file as new molecule into <code>VMD</code>, then execute the commands of <code>draw_pqr.sh</code> in Tk console.  
 
 ## How to use the gene file
 
