@@ -294,13 +294,13 @@ __const int sa_on_time)
                   }
                   if(id1+id2 == 2 && id1 == id2)
                   {
-                  if(V>0) V=0.25/1.06*V;
-                  if(V<0) V=4*1.06*V;
+                  if(V>0) V=0.25*V;
+                  if(V<0) V=4*V;
                   }
                   if(id1+id2 == 0)
                   {
-                  if(V>0) V=0.25*V;
-                  if(V<0) V=4*V;
+                  if(V>0) V=0.25/0.939*V;
+                  if(V<0) V=4*0.939*V;
                   }
                   if(id1+id2 == 1)
                   {
